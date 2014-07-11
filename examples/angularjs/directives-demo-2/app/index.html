@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/BirdsCtrl.js"></script>
+    <script src="scripts/directives/BirdDir.js"></script>
+  </head>
+  <body ng-app="app">
+    <div class="container" ng-controller="BirdsCtrl">
+      <h1>Birds</h1>
+      <hr>
+      <bird-element bird="harpy"></bird-element>
+      <bird-element bird="peregrine"></bird-element>
+      <bird-element bird="griffon"></bird-element>
+    </div>
+  </body>
+</html>
+
+
+
+

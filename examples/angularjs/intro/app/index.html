@@ -1,0 +1,14 @@
+<!doctype html>
+
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+<script src="bower_components/angular/angular.js"></script>
+
+<div class="container" ng-app>
+  <input type="text" class="form-control" ng-model="content">
+  <h1 id="greeting">Hello {{content}}</h1>
+
+  <ul>
+    <li ng-repeat="i in ['Hola', 'Namaste', 'Hallo']">{{i}}</li>
+  </ul>
+</div>
+

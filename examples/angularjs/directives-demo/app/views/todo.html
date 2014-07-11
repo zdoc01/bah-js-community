@@ -1,0 +1,45 @@
+<div class="panel panel-success">
+  <div class="panel-heading"><h1 class="panel-title">Todos</h1></div>
+
+  <div class="panel-body">
+    <form class="add-todo-form">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="input-group">
+            <input class="form-control" type="text" placeholder="New Todo" ng-model="newTodo">
+            <div class="input-group-btn">
+              <button class="btn btn-default" value="{{newTodo}}" type="submit" ng-click="addTodo(newTodo)">
+                <span class="glyphicon glyphicon-plus"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <hr>
+
+    <h3 class="placeholder" ng-hide="todos.pendingTodos.length"><em>Nothing to do</em></h3>
+
+    <ul class="list-group">
+      <li class="list-group-item clearfix" ng-repeat="todo in todos.pendingTodos">
+        <div id="todo-{{$index}}" ng-hide="editing">{{todo}}
+          <button class="btn btn-xs btn-success pull-right" ng-click="removeTodo($index)">
+            <span class="glyphicon glyphicon-ok"></span>
+          </button>
+        </div>
+        <form ng-show="editing" data-index="{{$index}}" editdone="editDone()">
+          <input type="text" class="form-control" value="{{todo}}">
+        </form>
+      </li>
+    </ul>
+  </div>
+
+  <div class="panel-footer clearfix">
+    <button class="btn btn-default" ng-class="todos.pendingTodos.length ? '' : 'disabled'" editstart="editStart()">
+      <span class="glyphicon glyphicon-pencil"></span> Edit List
+    </button>
+    <div class="pull-right clearfix-text">
+      {{todos.pendingTodos.length}} item(s)
+    </div>
+  </div>
+</div>

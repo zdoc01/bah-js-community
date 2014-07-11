@@ -1,0 +1,25 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body ng-app="app">
+
+<div class="container">
+  <h3>Pages</h3>
+  <ul>
+    <li><a href="#">Todos</a></li>
+    <li><a href="#/history">History</a></li>
+  </ul>
+</div>
+<hr>
+<div class="container" ng-view></div>
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/TodoCtrl.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/GreetingCtrl.js"></script>
+  </head>
+  <body ng-app="app">
+    <div class="container" ng-controller="GreetingCtrl">
+      <h1>{{greeting}}</h1>
+
+      <input type="text" class="form-control" ng-model="greeting">
+    </div>
+  </body>
+</html>
+
+
+
+

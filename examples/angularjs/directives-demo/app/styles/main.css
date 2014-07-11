@@ -1,0 +1,24 @@
+h1, h2, h3, h4 {
+  font-weight: 300;
+}
+
+small {
+  line-height: 50px !important;
+}
+
+.placeholder {
+  color: #cccccc;
+}
+
+.container {
+  max-width: 800px;
+  margin-top: 10px;
+}
+
+.add-todo-form {
+  margin-bottom: 10px;
+}
+
+.clearfix-text {
+  padding-top: inherit;
+}

@@ -1,0 +1,35 @@
+<h3>Add todo item</h3>
+<form>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="input-group input-group-lg">
+        <input class="form-control" type="text" placeholder="New Todo" ng-model="newTodo">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="submit" ng-click="addTodo()">
+          <span class="glyphicon glyphicon-plus"></span>
+        </button>
+      </span>
+      </div>
+    </div>
+  </div>
+</form>
+
+<hr>
+
+<div class="row">
+  <div class="col-lg-6">
+    <h1>Todos <small class="pull-right">{{todos.length}} item(s)</small></h1>
+
+    <ul class="list-group">
+      <li ng-hide="todos.length" class="list-group-item">
+        <h3 class="placeholder"><em>Nothing to do</em></h3>
+      </li>
+      <li class="list-group-item clearfix" ng-repeat="todo in todos">
+        {{todo}}
+        <button type="button" ng-click="removeTodo($index)" class="btn btn-xs btn-primary pull-right">
+          <span class="glyphicon glyphicon-ok"></span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>

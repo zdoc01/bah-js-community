@@ -1,0 +1,7 @@
+<h1>Todo History<small class="pull-right">{{todoHistory.length}} item(s)</small></h1>
+<ul class="list-group">
+  <li ng-hide="todoHistory.length" class="list-group-item">
+    <h3 class="placeholder"><em>You've done nothing</em></h3>
+  </li>
+  <li class="list-group-item" ng-repeat="todo in todoHistory">{{todo}}</li>
+</ul>
