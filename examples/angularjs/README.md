@@ -1,4 +1,4 @@
-# Introduction to AngularJS Examples
+# Introduction to AngularJS
 
 Authors/Presenters: Tejen Shrestha & Jonathan Tahan
 
@@ -20,6 +20,6 @@ $ npm install serveit -g
 $ serveit
 ```
 
-3. Navigate to http://localhost:1337 in your favoriate web browser
+3. Navigate to http://localhost:1337 in your favorite web browser
 
 4. Rejoice!
