@@ -1,0 +1,14 @@
+<div class="panel panel-default">
+  <div class="panel-heading"><h1 class="panel-title">Completed todos</h1></div>
+  <div class="panel-body">
+    <h3 class="placeholder" ng-hide="todoHistory.length"><em>You've done nothing</em></h3>
+    <ul class="list-group">
+      <li class="list-group-item" ng-repeat="todo in todoHistory">{{todo}}</li>
+    </ul>
+  </div>
+  <div class="panel-footer clearfix">
+    <span class="pull-right clearfix-text">
+      {{todoHistory.length}} item(s)
+    </span>
+  </div>
+</div>
