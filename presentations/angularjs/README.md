@@ -1,4 +1,6 @@
-# AngularJS Presentation
+# Introduction to AngularJS
+
+Authors/Presenters: Tejen Shrestha & Jonathan Tahan
 
 This presentation was made using reveal.js - A framework for easily creating beautiful presentations using HTML. [Check out the live demo of reveal.js](http://lab.hakim.se/reveal-js/).
 
