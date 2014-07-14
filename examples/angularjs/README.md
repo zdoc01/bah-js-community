@@ -6,20 +6,20 @@ Authors/Presenters: Tejen Shrestha & Jonathan Tahan
 
 Follow these steps to run the examples:
 
-1. Clone this repository and cd into the example you wish to run:
+(1) Clone this repository and cd into the example you wish to run:
 
 ```sh
 $ git clone https://github.com/zdoc01/bah-js-community.git
 $ cd bah-js-community/examples/angularjs/intro/app
 ```
 
-2. Install [serveit](https://www.npmjs.org/package/serveit) and serve up the example:
+(2) Install [serveit](https://www.npmjs.org/package/serveit) and serve up the example:
 
 ```sh
 $ npm install serveit -g
 $ serveit
 ```
 
-3. Navigate to http://localhost:1337 in your favorite web browser
+(3) Navigate to http://localhost:1337 in your favorite web browser
 
-4. Rejoice!
+(4) Rejoice!
